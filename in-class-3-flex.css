@@ -3,7 +3,6 @@
     height: 300px;
     margin: 10px;
     background-color: blue;
-    flex-wrap: wrap;
 }
 
 .flex-container{
@@ -11,4 +10,5 @@
     border: 1px solid blue;
     margin: 10px;
     display: flex;
+    flex-wrap: wrap;
 }
