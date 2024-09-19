@@ -1,0 +1,23 @@
+CISC 3300 SP24
+Homework 1
+
+1. What is HTML? What does it do?
+    1. Html (HyperText Markup Language) is a coding language to create websites. It describes the structure of websites using elements.
+2. What is CSS? What does it do?
+    1. CSS (Cascading Style Sheets) is a coding language that uses rules to enable you to control the styling and layout of webpages.
+3. Access https://www.fordham.edu/. In your own words, describe how this webpage uses
+structure to convey meaning and navigation options to the user.
+    1. The very top of the web page has a maroon and black band that separates information from the login button which is highlighted with the maroon color. Below is a wider white band with the logo on the left on the right are buttons that have drop down menus when you wave your mouse on top on them. The search bar is at the right, clearly visual with bolded and larger text. The rest of the webpage has a photo of the campus in the background and white boxes with links to news surrounding Fordham. The website is balanced for both students and prospective students.
+4. What is an HTML element? Tag? Attribute?
+    1. HTML has elements that are coded inside angled brackets with an opening and closing tag. These elements tell the browser information by defining what is inside the tags. HTML also uses elements to outline the structure of pages. Additionally, attributes, which show up in the opening tag, tells us more about the element's content. An attribute has a name and a value, separated by an equal sign.
+5. What are the parts of a CSS rule?
+    1. HTML links elements with CSS rules. These rules tell us how the content of the elements should be displayed. Text color for example. The first part of a CSS rule is the selector. The selector tell us which elements the rule should apply to. The second part is the declaration. The declaration tells us how the elements should be stylized.
+6. Explain how CSS rules cascade.
+    1. Firstly, if two selectors are the same, the latter will take come first, unless the first selector is more specific. Also, it is important to note that you can add !important after a property value to show it is more important than the other rules that apply to the exact element.
+7. If you have a directory called project-1 that contains two subdirectories, html-files and
+images. In the html-files directory you have an HTML file called html-1.html that has an
+img element with a src attribute, write out the value of the src attribute to access an
+image file called pinecone.jpg in the images directory.
+    1. <img src="images/pinecone.jpg" alt= "Image of Pine Cone." />
+8. What is the default behavior when submitting a HTML form?
+    1. After submitting the information in the form, it gets sent to the server. The server then processes the information with a programmed language (ex: Java). It can also be stored in a database. The server then creates a new page to send back to the browser based on the information.
