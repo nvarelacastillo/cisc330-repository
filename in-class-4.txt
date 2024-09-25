@@ -1,0 +1,8 @@
+1. In certain programming languages the source code is not directly translated by the target machine. Instead, a different program, aka the interpreter, reads and executes the code, this is called an _____interpreted___ language.
+2. Type checking is performed at runtime, means that the type of a variable is allowed to change over its lifetime, this is called ____dynamic____ typing.
+3. JS for web browser work doesn’t tend to use classes to make objects, and is written in a more ____functional____ style.
+4. Variables that are block scoped, not declarable use the keyword ___let_____
+5. ____Variable declaration____ determines the accessibility (visibility) of variables.
+6. Variables assigned with the ___const_____ keyword are block scoped and not redeclarable.
+7. Functions that can be passed as an argument to another function and called later are called ____call-back function____.
+8. Non primitive data types are (almost) all technically ___objects_____ in memory.
