@@ -1,0 +1,5 @@
+Flexbox (Flexible Box Layout) is a 1-d layout system, while CSS grid is a 2-d layout system.
+In Flexbox, properties are split between parent and child containers.
+It aligns items in the main and cross axis while the CSS grid uses a grid system with rows and columns.
+The CSS grid web layout model has separate rules for its child and parent containers.
+The grid parent defines the columns and rows, while the child decides a grid item’s placement.
