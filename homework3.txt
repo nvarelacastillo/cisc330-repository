@@ -1,0 +1,19 @@
+1. What is javascript? How does an interpreted programming language differ from a compiled language?
+
+JavaScript is a lightweight language used primarily for web development to add dynamic interaction, applications, and games. JavaScript is an interpreted programming language, which means that the source code is executed by the interpreter without needing a prior compilation step. Interpreted languages are generally platform independent and allow for faster testing and debugging. However, they tend to have slower execution speeds compared to compiled languages. On the other hand, compiled languages, such as C++, are converted into machine code before they are executed, which leads to faster performance. Yet, the compilation process takes time and makes them platform dependent.
+
+2. Contrast dynamically typed programming languages with statically typed ones. And contrast strongly typed programming languages with weakly typed ones. (google these)
+
+Dynamically typed programming languages type check at runtime, which allows for the type of a variable to change during execution. Statically typed programming languages type check at compilation, which makes it so variable types need to be explicitly defined. Weakly typed programming languages recognize different data types (number, character, etc.), but they don't have strict rules, so they try to convert data when it seems reasonable. Strongly typed languages have stricter rules, which makes it impossible to use different variable types in the same operation with conversion.
+
+3. What is the difference between var, let, and const when declaring variables in JS?
+
+Var, let, and const are used in JavaScript used to declare variables, but they have differences in their scope and declarability. The var keyword is function scoped when declared inside a function and globally scoped elsewise, and it is re-declarable. The let keyword is block scoped, which means it can only be used in the block it was defined in, and it is also re-declarable. The const keyword is also block scoped, but it is not declarable, which means it can not be updated after it is declared.
+
+4. What are anonymous functions? Higher order functions? Callback functions? First class functions?
+
+There are different types of functions in JavaScript that have different purposes. For example, anonymous functions are functions with no name, which means they can not be called and are instead executed when the interpreter comes across them. High order functions return a function or take functions as arguments. A callback function is passed as an argument to another function to be called on later. And a first class function is treated like other variables.
+
+5. Define objects in JavaScript.
+
+In JavaScript, objects are a non primitive data structure used to group related variables and functions. In an object, a variable is known as a property, which tells us about the object, such as its name or a numerical value. Properties consist of a name (key) and a value, each property is a key-value pair. That value can be any data type. Yet, when the property’s value is a function, it is called a method. Methods represent tasks associated with the object.
