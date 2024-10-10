@@ -1,0 +1,19 @@
+1. What is the DOM? What is meant by the DOM tree?
+
+The DOM (Document Object Model) is a set of rules that is implemented by all major browsers. Firstly, it tells browsers how they should create a model of an HTML web page. When a web page is loaded, the browser creates a model of the page in memory. The DOM tells the browser how it should structure the model using a DOM tree. A DOM tree is made of objects and each represents a different part of the web page in the browser window. The DOM tree consists of four main types of nodes: the document, element, attribute and text node. Every element, attribute, and piece of text is its own DOM node, each with its own type. Secondly, the DOM specifies how JavaScript can access and change the content of a webpage while being used in a browser window. The DOM defines methods and properties to access and update each object. The DOM is an Application Programming Interface (API), which means that users interact with the program. APIs allow programs and scripts to talk to each other. The DOM allows what your script can ask the browser about the web page and how to update it.
+
+2. What is an XSS attack? How do they work? How can you guard against them?
+
+An XSS attack is a cross-site scripting attack that tries to run malicious code in a user’s browser. If someone adds code into an input field that’s displayed as HTML, it could execute for other users, which is why you have to be super careful with any content treated as HTML. You should almost never show user input as HTML. But if you absolutely have to, you should validate the input by stripping out anything suspicious, removing tags, escaping characters, and making sure there’s nothing that could be executed as code.
+
+3. What is an event in JavaScript?
+
+HTML events are “things” that happen to HTML elements. When you are browsing the web, your browser registers different types of events and your script responds to them. Interactions create events, such as clicks, hovers, and keyboard types. These events can trigger code that responds when the event is fired by the browser or HTML element. Scripts respond to these events by updating the content or behavior of the web page.
+
+4. How does a DOM eventListener work? What are the parameters it is expecting?
+
+A DOM eventListener binds an event to an element using the .addEventListener function on the DOM element you want to target. It takes three main parameters: the first is the event type (ex: "click"), which specifies what action to listen for. The second parameter is the code, which is the named function that runs when the event is triggered. The third parameter is: event flow (optional), which indicates capture.
+
+5. What is jQuery? Why use it? How do we load jQuery onto a page?
+
+JQuery is a JavaScript file that you include in a web page, allowing you to find elements using CSS-style selectors and interact with them using jQuery methods. It offers a simple way to perform a variety of common JavaScript tasks more efficiently in just one line of code across all major browsers, without having to worry about writing fallback code. It’s much easier to access elements using jQuery compared to standard DOM queries, and its selectors are more flexible and powerful. To load jQuery onto a page, just use a <script> tag with the src attribute pointing to the jQuery file.
