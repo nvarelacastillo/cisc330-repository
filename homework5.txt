@@ -1,0 +1,32 @@
+1. What is HTTP? What are the different HTTP request methods and how do they differ?
+
+HTTP (HyperText Transfer Protocol) is how the internet handles the communication between clients and servers, allowing data to be exchanged by requests and responses. It is the go-to for getting resources such as HTML documents or JSON data, and is a client-server protocol, meaning that requests are made by the recipient (ex: Web Browser). HTTP is how data is sent across the internet. Each request has a method type that has semantic meaning, it defines what action to take. For example, GET is used to retrieve data. The POST method submits data to a specified resource, often causing a change in state or side effects on the server, or most commonly, creating a new resource. The PUT method replaces all current representations of the target resource with the request payload, updating everything for a resource. The PATCH method is used to change and modify resources. Finally, the DELETE method deletes a resource.
+
+2. What is an API? What is JSON?
+
+An API (Application Programming Interface) allows programs, including scripts to communicate with each other. Browsers, websites, scripts, and other applications often open some of their functionality so that programmers can use them. This is particularly useful for programmers to save time as they can avoid writing something from scratch. APIs allow developers to make requests, asking another program or script to do something. For example, platform APIs, like Facebook and Google are used so that you can access and update data they store. JSON (JavaScript object notation) is a lightweight data interchange format that uses human-readable text to store and transmit data objects consisting of attribute-value pairs, arrays, and other serializable values. It is particularly useful because JavaScript can convert JSON data into native JavaScript objects.
+
+3. What is AJAX? What is meant by asynchronous code?
+
+Ajax (Asynchronous JavaScript and XML) allows web pages to load data, usually JSON (it can also use HTML or XML) into a part of a page without having to refresh the page. Also, asynchronous code allows your code to run in the background without blocking other code being executed. And, Ajax uses an asynchronous processing model, thus a user can do other things while a web browser is waiting for data to load. Ajax significantly improves user experience as the person using the web page does not have to wait for an entire page to load if only a part of it is being updated.
+
+4. What is REST and what are resources? If my application had a concept called posts and was designed in a RESTful way, what would the URI and HTTP request method be to:
+
+REST (Representational State Transfer) is an architectural style for organizing code in a way that lets requests interact with resources consistently. It makes it way easier for systems to communicate with each other. In REST, the main concept is the resource, which could be anything from documents, images, services, collections, to physical objects. A resource is anything you can point to with a URI, and it’s the target for the operations you perform, like updating, creating, and retrieving.
+
+a. retrieve multiple posts
+(URI) /posts
+(HTTP) GET
+b. retrieve a single post
+(URI) /posts/{id} (ex: /posts/1234)
+(HTTP) GET
+c. save a post
+(URI) /posts
+(HTTP) POST
+d. update a post
+(URI) /posts/{id} (ex: /posts/1234)
+(HTTP) PUT
+
+5. Define hoisting and closures in JS.
+
+When a script enters a new execution context, there are two phases of activity. The first phase is preparation: a new scope is created, variables and functions are declared, arguments are set up, and the value of the this keyword is determined. Hoisting occurs during the preparation phase, where the declarations of variables and functions are moved to the top of the scope. The second phase is to execute. Closures are the ability of a function to remember the variables and functions from its outer scope. This allows for functions to work with variables outside their scope and is used to achieve encapsulation in JavaScript.

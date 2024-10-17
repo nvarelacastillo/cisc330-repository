@@ -1,0 +1,84 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Homework 5: Question 7</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <style>
+
+            input {
+                width: 60%;
+                padding: 15px;
+                margin-top: 10px;
+            }
+            input{
+                background-color: lightpink;
+                color: white;
+                padding: 15px;
+                border: none;
+                font-family: "American Typewriter", sans-serif;
+            }
+            input::placeholder {
+                color: white;
+            }
+            body {
+                font-family: "American Typewriter", sans-serif;
+                background-color: #FFC0CB;
+                color: white;
+                text-align: center;
+
+            }
+            .recipe {
+                padding: 5px;
+                color: white;
+            }
+            form {
+                margin-top: 10px;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Recipes</h1>
+        <div id="allRecipes"></div>
+        <form id="form">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="description" placeholder="Note" required>
+            <input type="submit" value="Create New Recipe">
+        </form>
+
+        <script>
+            function allRecipes() {
+                $('#allRecipes').empty();
+                $.get('http://localhost:3000/recipes', function(data) {
+                    data.forEach(function(recipe) {
+                        $('#allRecipes').append(
+                            `<div class="recipe">
+                                <strong>${recipe.title}</strong><br>${recipe.description}
+                            </div>`
+                        );
+                    });
+                });
+            }
+
+            $('#form').submit(function(e) {
+                e.preventDefault();
+                const userRecipe = {
+                    title: $('#title').val(),
+                    description: $('#description').val()
+                };
+
+                $.ajax({
+                    url: 'http://localhost:3000/recipes',
+                    method: 'POST',
+                    data: JSON.stringify(userRecipe),
+                    contentType: 'application/json',
+                    success: function () {
+                        allRecipes();
+                        $('#form')[0].reset();
+                    }
+                });
+            });
+                $(document).ready(allRecipes);
+        </script>
+    </body>
+</html>

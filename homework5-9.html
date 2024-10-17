@@ -1,0 +1,26 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Homework 5: Question 6</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+            function nycTemp() {
+                const url = "https://api.open-meteo.com/v1/forecast?latitude=40.7143&longitude=-74.006&hourly=temperature_2m&timezone=America/New_York";
+
+                $.ajax({
+                    url: url,
+                    method: "GET",
+                    success: function(data) {
+                        // To Fahrenheit.
+                        const tempF = (data.hourly.temperature_2m[0]) * 1.8 + 32;
+                        $('#temperature').text(tempF.toFixed(1));
+                    },
+                });
+            }
+            $(document).ready(nycTemp);
+        </script>
+    </head>
+    <body>
+    <h1 id="temperature"></h1>
+    </body>
+</html>
