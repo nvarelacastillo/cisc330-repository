@@ -1,0 +1,18 @@
+CISC 3300 F24
+Homework 6
+1. What is PHP? What do server side languages do in web development?
+PHP (Hypertext Preprocessor) is a programming language used to build websites and was designed to run on a web server. When someone requests a web page, the server can use PHP to generate an HTML page and send it back to the user. PHP is a server-side scripting language, which means it processes user input, interacts with databases, and can communicate with other servers to generate content.
+2. What are some examples of how PHP and JavaScript are alike and how they differ?
+
+Both JavaScript and PHP use if, else if, and else constructs. PHP also supports elseif, which is written without a space. JavaScript supports both function declarations and function expressions, while PHP supports regular function declarations as well as anonymous functions and closures. JavaScript and PHP have very similar operators, but PHP also supports and and or in addition to && and ||. Both languages are dynamic, high-level languages, meaning they come with built-in data structures. For example, in both languages, arrays can hold mixed data types.
+3. Why pick PHP over another server side scripting language?
+PHP is extremely popular, used on almost 80% of websites. It's also compatible with MySQL, making it perfect for building sites that need to store and manage data. One of the best things about PHP is that it's easy to learn, which makes it a great choice when learning web development. It's also efficient and well-structured. And, it's free, which is always a bonus.
+
+4. What’s the difference between the include and require keywords in PHP?
+a. What would happen if you tried to use a variable from a file that hasn’t been included yet?
+
+Include and require are two keywords that can be used to include code from an include file. The include keywords tells the PHP interpreter to get another file from the server and treat it as if the contents of that file had been written where the include statement is written. In fact, both keywords add code from the file whose path follows the word. The difference is how the PHP interpreter behaves if the included file cannot be found or read. Using the include keyword, the interpreter generates an error, but continues to keep trying to process the rest of the page. Meanwhile, using the require keyword, the interpreter generates an error, then stops trying to process the rest of the page. If you tried to use a variable from a file that hasn’t been included yet with the include keyword, the variables will be undefined and will require PHP to stop, making the variable inaccessible and making it so the rest of the page does not load.
+
+5. Compare and contrast echo and var_dump.
+
+Both are used to output information. Echo is a language construct that takes a list of arguments and doesn't return a value (or returns void). It simply outputs whatever parameters are passed to it and uses commas to separate multiple outputs. On the other hand, var_dump literally dumps detailed information about one or more variables. It shows the type and value of each variable and can even handle non-primitive values like arrays and objects. Since var_dump shows the data type along with the value, it gives a more in-depth look at what's going on, making it especially useful for debugging.
