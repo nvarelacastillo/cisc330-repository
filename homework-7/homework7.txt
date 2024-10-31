@@ -1,0 +1,19 @@
+1. What is a class? What is an object? What is OOP?
+
+A class is a template for creating objects in OOP. Object-oriented programming is a programming model that organizes software design around objects. Each object that is created using a class  is given the properties and methods defined in the class. Objects are an instance of a class. Just like objects in JavaScript, a PHP variable for an object is a reference to the dynamic data, built-up of the data set up with the class.
+
+2. Why use an abstract class in OOP?
+
+Use an abstract class in OOP when you want to define a class that has some functionality but leaves out specific details for derived classes to implement. Abstract classes let the parent class create default methods, allowing shared behaviors while letting derived classes change that behavior.
+
+3. What are superglobals in PHP, what are some examples of data they provide?
+
+The PHP interpreter comes with several tools to help you build dynamic web pages, including superglobal arrays that are created each time a file is requested. Whenever a browser requests a PHP page, the PHP interpreter creates a set of arrays called superglobal arrays that hold data accessible to the PHP code on that page. For example, $_SERVER is one of these superglobals, and it contains various elements that store information about the request or the file being accessed. Another example is $_GET, which has data sent to the server through an HTTP GET method. Each superglobal array provides data that the PHP code can use, allowing for dynamic and interactive web applications.
+
+4. What are the two steps to setting up and using a class via namespaces?
+
+To set up and use a class via namespaces, first, add a namespace declaration at the start of the PHP file to indicate that the code belongs to that namespace. Any classes declared in the file will then reside within that namespace. Second, to use the class, you can either type out the full namespace every time you want to access the class, or you can import the class into the current namespace using the use keyword.
+
+5. What is MVC? Detail the different parts.
+
+The MVC (Model View Controller) is an architectural design pattern that divides an application into three logical parts: the Model, View, and Controller. Each part is designed to handle specific aspects of development, isolating the business logic from the presentation layer. Firstly, the Controller serves as the connection between the View and the Model. It tells the Model what to do, processes business logic and requests, manipulates data using the Model, and interacts with the View to display the output. The View is responsible for user interaction. It creates a user interface based on the data collected by the Model and only interacts with the Controller. Finally, the Model corresponds to the data-related logic that the user interacts with. It manages the data being transferred between the View and Controller, as well as any business logic. The Model can add and retrieve data from the database, responding to the Controller's requests while directly handling database interactions.
