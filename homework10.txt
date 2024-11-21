@@ -1,0 +1,19 @@
+1. What are PDOs? What is a DSN?
+
+PDOs are a built-in class that comes with PHP that makes it easy to interact with databases. PDO objects are instantiated with a Data Source Name (DSN) string which represents the connection to the database. The DSN is a string that has information about the connection to the database.
+
+2. What are .env files? What are .gitignore files?
+
+An .env file contains environment variables, which are variables whose value is set outside of the program, most often through a built-in functionality. On the other hand, .gitignore files are text files that inform GIT which files/folders to ignore (the .env file).
+
+3. Should you ever upload passwords of any kind to github?
+
+Absolutely not. Uploading passwords of any kind to GitHub exposes data and makes your code vulnerable to malicious attacks. If attackers manage to access your passwords, they can exploit your servers and database.
+
+4. What is SQL injection?
+
+A SQL injection is when a hacker tries to insert malicious sql code in a database query. They can be avoided when using prepared statements with parameters being run in sql. Preparing statements run the escaping function on the parameters that will be used.
+
+5. What are prepared statements? How can we pass variables to a prepared statement?
+
+A prepared statement is a parameterized SQL query that can be reused that makes the developer write the SQL commands and the user-provided data individually. To pass variables to a prepared statement, you have placeholders in the query and then connect variables to the placeholders before the statement is executed.
